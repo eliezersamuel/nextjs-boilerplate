@@ -1,0 +1,36 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.component.tsx": "${capture}.component.ts, ${capture}.stories.ts, ${capture}.stories.tsx, ${capture}.stories.mdx, ${capture}.mdx, ${capture}.spec.ts, ${capture}.spec.tsx, ${capture}.style.ts,",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        ".next": true,
+        ".swc": true,
+        "coverage": true,
+        "node_modules": true,
+        ".editorconfig": true,
+        ".eslintrc.json": true,
+        ".gitignore": true,
+        "components.json": true,
+        "cypress.config.ts": true,
+        "jest.config.ts": true,
+        "next-env.d.ts": true,
+        "next.config.mjs": true,
+        "postcss.config.mjs": true,
+        "tailwind.d.ts": true,
+        "tsconfig.json": true,
+        ".storybook": true
+    },
+    "mdx.server.enable": true,
+    "explorerExclude.backup": {},
+    "mdx-preview.preview.useVscodeMarkdownStyles": true
+}
