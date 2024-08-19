@@ -28,7 +28,8 @@
         "postcss.config.mjs": true,
         "tailwind.d.ts": true,
         "tsconfig.json": true,
-        ".storybook": true
+        ".storybook": true,
+        "jest-setup.ts": true
     },
     "mdx.server.enable": true,
     "explorerExclude.backup": {},
