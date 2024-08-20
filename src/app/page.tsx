@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import UserAndZustand from "./UserAndZustand";
+import { useBearStore } from "@/store/Bear.store";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -7,6 +8,8 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
+    const { bears } = useBearStore.getState();
+
     // const abortController = new AbortController();
     // setTimeout(() => {
     //   abortController.abort();
@@ -24,6 +27,10 @@ export default async function Home() {
     return (
         <>
             <UserAndZustand />
+            <div className="flex flex-col w-screen justify-center items-center p-10">
+                <h1>Valor do zustand store dentro de server component</h1>
+                <strong>{bears}</strong>
+            </div>
         </>
     );
 }
